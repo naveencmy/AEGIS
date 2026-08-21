@@ -32,6 +32,8 @@ jobs:
           flake8 backend --count --exit-zero --max-complexity=15 --max-line-length=127 --statistics
 
       - name: Run Backend Tests
+        env:
+          PYTHONPATH: .
         run: |
           pytest backend/tests/ -v -m "not slow" --ignore=backend/tests/run_eval_suite.py
 

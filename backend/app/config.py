@@ -1,7 +1,9 @@
 from pathlib import Path
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env", extra="allow")
+
     # App Information
     APP_NAME: str = "AEGIS - Sovereign Cybersecurity Co-Pilot"
     APP_VERSION: str = "0.1.0"
@@ -50,9 +52,5 @@ class Settings(BaseSettings):
 
     # Invariant 4 - Sovereign Silence Message
     SILENCE_RESPONSE: str = "Insufficient verified intelligence in the knowledge base"
-
-    class Config:
-        env_file = ".env"
-        extra = "allow"
 
 settings = Settings()
