@@ -35,7 +35,7 @@ jobs:
         env:
           PYTHONPATH: .
         run: |
-          pytest backend/tests/ -v -m "not slow" --ignore=backend/tests/run_eval_suite.py
+          python -m pytest backend/tests/ -v -m "not slow" --ignore=backend/tests/run_eval_suite.py
 
   frontend-build:
     name: Frontend Build & Verification
