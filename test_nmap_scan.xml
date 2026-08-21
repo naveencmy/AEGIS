@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<nmaprun scanner="nmap" args="nmap -sV -oX scan.xml 192.168.1.50" start="1708264800" version="7.94">
+<host starttime="1708264800" endtime="1708264810">
+<status state="up" reason="arp-response"/>
+<address addr="192.168.1.50" addrtype="ipv4"/>
+<hostnames>
+<hostname name="corp-internal-app" type="PTR"/>
+</hostnames>
+<ports>
+<port protocol="tcp" portid="80">
+<state state="open" reason="syn-ack"/>
+<service name="http" product="Apache httpd" version="2.4.49" method="probed" conf="10">
+<cpe>cpe:/a:apache:http_server:2.4.49</cpe>
+</service>
+</port>
+<port protocol="tcp" portid="8080">
+<state state="open" reason="syn-ack"/>
+<service name="http-alt" product="Apache Log4j2" version="2.14.1" method="probed" conf="10">
+<cpe>cpe:/a:apache:log4j:2.14.1</cpe>
+</service>
+</port>
+</ports>
+</host>
+</nmaprun>

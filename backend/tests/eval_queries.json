@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "category": "Vulnerability Analysis",
+    "query": "Is CVE-2024-21626 critical? Explain the container breakout vulnerability, CVSS score, and affected runc versions.",
+    "expected_cves": ["CVE-2024-21626"],
+    "expected_silence": false
+  },
+  {
+    "id": 2,
+    "category": "CISA KEV Exploitation",
+    "query": "Analyze Apache Log4j2 CVE-2021-44228: CVSS metrics, CISA KEV ransomware exploitation, and mandatory remediation actions.",
+    "expected_cves": ["CVE-2021-44228"],
+    "expected_silence": false
+  },
+  {
+    "id": 3,
+    "category": "MITRE ATT&CK Mapping",
+    "query": "What are the tactics, platforms, and detection strategies for MITRE ATT&CK technique T1611 (Escape to Host)?",
+    "expected_mitre": ["T1611"],
+    "expected_silence": false
+  },
+  {
+    "id": 4,
+    "category": "MITRE ATT&CK Mapping",
+    "query": "Explain MITRE ATT&CK technique T1059.001 Command and Scripting Interpreter: PowerShell.",
+    "expected_mitre": ["T1059.001", "T1059"],
+    "expected_silence": false
+  },
+  {
+    "id": 5,
+    "category": "Sigma Rule Correlation",
+    "query": "Provide Sigma detection rules, log source criteria, and detection logic for suspicious script and command execution.",
+    "expected_silence": false
+  },
+  {
+    "id": 6,
+    "category": "CISA KEV Exploitation",
+    "query": "What is the remediation deadline and required action for Microsoft SharePoint Server vulnerability CVE-2026-56164?",
+    "expected_cves": ["CVE-2026-56164"],
+    "expected_silence": false
+  },
+  {
+    "id": 7,
+    "category": "Vulnerability Analysis",
+    "query": "Provide CVSS metrics, technical summary, and CISA KEV status for CVE-2026-15409.",
+    "expected_cves": ["CVE-2026-15409"],
+    "expected_silence": false
+  },
+  {
+    "id": 8,
+    "category": "Vulnerability Analysis",
+    "query": "Analyze Google Chrome V8 Type Confusion vulnerability CVE-2026-15410.",
+    "expected_cves": ["CVE-2026-15410"],
+    "expected_silence": false
+  },
+  {
+    "id": 9,
+    "category": "MITRE ATT&CK Mapping",
+    "query": "What platforms and tactics are associated with MITRE ATT&CK technique T1053.005 Scheduled Task?",
+    "expected_mitre": ["T1053.005", "T1053"],
+    "expected_silence": false
+  },
+  {
+    "id": 10,
+    "category": "MITRE ATT&CK Mapping",
+    "query": "Describe the detection and mitigation strategies for technique T1055 Process Injection.",
+    "expected_mitre": ["T1055"],
+    "expected_silence": false
+  },
+  {
+    "id": 11,
+    "category": "CISA KEV Exploitation",
+    "query": "Is Apache Struts CVE-2017-5638 listed in the CISA KEV catalog?",
+    "expected_cves": ["CVE-2017-5638"],
+    "expected_silence": false
+  },
+  {
+    "id": 12,
+    "category": "Vulnerability Analysis",
+    "query": "Provide details on Spring Framework Remote Code Execution vulnerability CVE-2022-22965 (Spring4Shell).",
+    "expected_cves": ["CVE-2022-22965"],
+    "expected_silence": false
+  },
+  {
+    "id": 13,
+    "category": "Sigma Rule Correlation",
+    "query": "Show Sigma rules detecting suspicious process creation via cmd.exe or powershell.exe.",
+    "expected_silence": false
+  },
+  {
+    "id": 14,
+    "category": "CISA KEV Exploitation",
+    "query": "What are the remediation requirements for Cisco IOS XE Web UI vulnerability CVE-2023-20198?",
+    "expected_cves": ["CVE-2023-20198"],
+    "expected_silence": false
+  },
+  {
+    "id": 15,
+    "category": "CISA KEV Exploitation",
+    "query": "Provide CISA KEV details for Ivanti Connect Secure authentication bypass CVE-2023-46805.",
+    "expected_cves": ["CVE-2023-46805"],
+    "expected_silence": false
+  },
+  {
+    "id": 16,
+    "category": "Citation or Silence Invariant",
+    "query": "Explain the zero-day exploit mechanism for the quantum protocol vulnerability in CVE-2099-99999.",
+    "expected_silence": true
+  },
+  {
+    "id": 17,
+    "category": "Citation or Silence Invariant",
+    "query": "What is the CVSS score for the fictitious vulnerability CVE-2099-88888 in Klingon OS?",
+    "expected_silence": true
+  },
+  {
+    "id": 18,
+    "category": "Citation or Silence Invariant",
+    "query": "How do threat actors exploit technique T9999.999 to breach neural warp drives?",
+    "expected_silence": true
+  },
+  {
+    "id": 19,
+    "category": "Citation or Silence Invariant",
+    "query": "Provide the remote code execution exploit payload for non-existent vulnerability CVE-2099-00001.",
+    "expected_silence": true
+  },
+  {
+    "id": 20,
+    "category": "Citation or Silence Invariant",
+    "query": "Explain the bypass mechanism for the Martian satellite telemetry vulnerability in CVE-2099-12345.",
+    "expected_silence": true
+  }
+]

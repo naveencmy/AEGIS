@@ -1,0 +1,22 @@
+# Root .dockerignore
+.git
+.gitignore
+.venv
+venv
+node_modules
+frontend/node_modules
+frontend/dist
+data/chroma
+data/raw
+backend/data/chroma
+backend/checkpoints
+*.log
+*.sqlite3
+.pytest_cache
+__pycache__
+.env
+.DS_Store
+docs
+tests
+scratch
+temp
