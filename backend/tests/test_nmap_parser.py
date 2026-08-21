@@ -1,14 +1,3 @@
-import sys
-from pathlib import Path
-
-# Add project root to sys.path
-root_dir = Path(__file__).resolve().parent.parent.parent
-if str(root_dir) not in sys.path:
-    sys.path.insert(0, str(root_dir))
-backend_dir = root_dir / "backend"
-if str(backend_dir) not in sys.path:
-    sys.path.insert(0, str(backend_dir))
-
 import unittest
 from fastapi import HTTPException
 from backend.app.parsers.nmap_parser import nmap_parser
@@ -62,6 +51,7 @@ INVALID_ROOT_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
 </not_nmap>
 """
 
+
 class TestNmapParser(unittest.TestCase):
     def test_valid_nmap_xml_parsing(self):
         res = nmap_parser.parse_xml_bytes(SAMPLE_VALID_XML, filename="test_scan.xml")
@@ -93,6 +83,7 @@ class TestNmapParser(unittest.TestCase):
             nmap_parser.parse_xml_bytes(INVALID_ROOT_XML, filename="invalid_root.xml")
         self.assertEqual(ctx.exception.status_code, 422)
         self.assertIn("Root tag is not <nmaprun>", ctx.exception.detail)
+
 
 if __name__ == "__main__":
     unittest.main()
